@@ -1,7 +1,14 @@
 * {
-  box-sizing: border-box;
   padding: 0px;
   margin: 0px;
+}
+body{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.container{
+  flex: 1;
 }
 header {
   position: absolute;
@@ -62,16 +69,24 @@ footer {
   color: white;
   height: 9%; */
 
-  width: 100em;
-  background-color: rgb(110, 50, 26);
-  height: 9em;
-  position: relative;
-  flex: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  display: block;
+ position: fixed;
+ bottom: 0;
+ background-color: rgb(110, 50, 26);
+ box-sizing: border-box;
+ width: 100%;
+ text-align: center;
+ padding: 50px 50px 60px 50px;
+ display: inline-block;
+ vertical-align: top;
+ line-height: 1.8;
+ color: white;
+ left: 0;
 }
-
+@media(max-height: 800px){
+  footer{
+    position: static;
+  }
+}
 header::before {
   position: absolute;
   content: "";
@@ -128,18 +143,11 @@ footer .footernav .btns button:hover {
   display: inline-block;
   width: 177px;
   height: 255px;
+  padding: 5px;
 }
 
 .box {
   background-color: rgb(199, 126, 189);
-}
-
-@media (max-width: 700px) {
-  .contaner {
-  }
-
-  .box {
-  }
 }
 
 .oxy {
