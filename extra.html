@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Helpdesk form</title>
+    <style>
+        button[type="submit"]{
+            width:60px;
+            background-color:black;
+            color:white;
+            margin:auto;
+            text-align: center;
+        }
+      .form {
+        width: 500px;
+        height: 800px;
+        border: 2px solid tomato;
+        display: flex;
+        flex-direction: column;
+      }
+      label {
+        display: inline-block;
+        margin: 5px;
+      }
+      .input1,.input2,.input3,.input4,#message,select {
+        width: 400px;
+        padding: 2%;
+        margin: 2%;
+        
+      }
+      .formcontainer {
+        width: 100%;
+        height: 100%;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h3 {
+        text-align: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <div class="formcontainer">
+        <div class="form">
+          <div><h3>HELP DESK FOR PERSON</h3></div>
+          <label for="name">Name</label>
+          <input  class="input1" type="text" name="name" placeholder="enter your name" id="name"/>
+
+          <label for="tel">Mobile No.</label>
+          <input class="input2" type="tel" name="number" id="tel" placeholder="enter you mobile"/>
+
+          <label for="email">EMAIL ID</label>
+          <input  class="input3" type="email"  name=" email" id="email" placeholder="enter your email"/>
+
+          <label for="name">NAME OF PATIENT</label>
+          <input class="input3" type="text" name="name" id="name" placeholder="enter name of patient" />
+
+          <label for="city">CITY</label>
+          <input class="input4"  type="text"  name="city" placeholder="enter your city" id="name"/>
+          <label for="message">MESSAGE</label>
+          <textarea name="message" id="message" cols="25" rows="10"></textarea>
+          <label for="state">STATE</label>
+          <select name="state" id="state" class="form-control">
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Andaman and Nicobar Islands">
+              Andaman and Nicobar Islands
+            </option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Dadar and Nagar Haveli">
+              Dadar and Nagar Haveli
+            </option>
+            <option value="Daman and Diu">Daman and Diu</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Lakshadweep">Lakshadweep</option>
+            <option value="Puducherry">Puducherry</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+          </select>
+          <button type="submit">submit</button>
+
+        </div>
+      </div>
+    </form>
+  </body>
+
+</html>
